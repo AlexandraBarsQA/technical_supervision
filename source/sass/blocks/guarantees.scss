@@ -1,0 +1,86 @@
+.guarantees {
+  max-width: 100%;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  column-gap: 60px;
+  row-gap: 20px;
+
+  @include _1600 {
+    width: 83%;
+  }
+
+  @include _1280 {
+    width: 100%;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    row-gap: 40px;
+  }
+
+  @include _1080 {
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  @include _680 {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  @include _580 {
+    row-gap: 30px;
+    text-align: center;
+  }
+}
+
+.guarantees p {
+  font-family: var(--main-text-family);
+  font-size: 21px;
+  line-height: var(--main-text-line);
+  font-weight: 300;
+  color: var(--back-contact);
+  text-transform: uppercase;
+  font-variant: small-caps;
+  font-stretch: condensed;
+  letter-spacing: -0.01em;
+  margin: 0;
+
+  @include _1600 {
+    font-size: 13px;
+    line-height: 18px;
+  }
+
+  @include _1280 {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  @include _767 {
+    font-size: 14px;
+    line-height: 18px;
+  }
+}
+
+p.guarantees__head {
+  position: relative;
+  font-weight: 700;
+  margin-bottom: 42px;
+
+  @include _580 {
+    margin-bottom: 32px;
+  }
+}
+
+p.guarantees__head::after {
+  position: absolute;
+  content: "";
+  width: 83px;
+  height: 5px;
+  left: 0;
+  bottom: -17px;
+  background-color: var(--headline);
+
+  @include _580 {
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}

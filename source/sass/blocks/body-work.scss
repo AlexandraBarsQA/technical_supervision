@@ -1,0 +1,15 @@
+.body-work {
+  max-width: 100%;
+  background: url(../img/back-pattern-work.svg), #004f4f;
+  background-repeat: repeat;
+  background-size: 215px 177px;
+  overflow-x: hidden;
+
+  @include _1280 {
+    background-size: 15% auto;
+  }
+
+  @include _680 {
+    background-size: 12% auto;
+  }
+}

@@ -1,0 +1,43 @@
+.advantages {
+  max-width: 100%;
+  margin-bottom: 70px;
+
+  @include _1280 {
+    margin-bottom: 50px;
+  }
+}
+
+.advantages h2 {
+  padding-right: 90px;
+
+  @include _1600 {
+    font-size: 30px;
+  }
+
+  @include _1280 {
+    font-size: 28px;
+  }
+
+  @include _1080 {
+    font-size: 24px;
+    margin-bottom: 30px;
+  }
+
+  @include _960 {
+    font-size: 21px;
+  }
+
+  @include _767 {
+    font-size: 18px;
+    text-align: center;
+    padding-right: 0;
+  }
+
+  @include _580 {
+    font-size: 16px;
+  }
+
+  @include _480 {
+    font-size: 14px;
+  }
+}

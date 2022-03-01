@@ -1,0 +1,155 @@
+.call-form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 97px;
+  row-gap: 25px;
+  max-width: 1600px;
+
+  @include _1600 {
+    column-gap: 40px;
+  }
+
+  @include _1080 {
+    grid-template-columns: 1fr;
+  }
+
+  @include _960 {
+    text-align: center;
+  }
+
+  @include _680 {
+    display: block;
+  }
+}
+
+.call-form__item--user {
+  margin-right: 97px;
+
+  @include _960 {
+    padding-bottom: 25px;
+  }
+}
+
+.call-form input {
+  font-family: var(--title-family);
+  font-size: 50px;
+  font-weight: 300;
+  color: var(--main-text);
+  height: 83px;
+  padding-top: 21px;
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-bottom: 13px;
+  border: none;
+  border-bottom: 2px solid var(--back-contact);
+  background: transparent;
+
+  @include _1600 {
+    font-size: 35px;
+  }
+
+  @include _960 {
+    font-size: 28px;
+    line-height: 32px;
+  }
+
+  @include _680 {
+    width: 100%;
+  }
+}
+
+.call-form p {
+  margin: 0;
+}
+
+.call-form span {
+  display: block;
+  font-family: var(--title-family);
+  font-size: var(--span-text-size);
+  font-weight: 300;
+  color: #201c20;
+  margin-top: 15px;
+
+  @include _1600 {
+    font-size: 18px;
+  }
+
+  @include _1400 {
+    font-size: 14px;
+  }
+
+  @include _1080 {
+    font-size: 12px;
+  }
+
+  @include _767 {
+    font-size: 10px;
+  }
+}
+
+.call-form__item--btn span {
+  color: #999999;
+}
+
+.call-form a {
+  color: var(--headline);
+}
+
+.call-form:active input {
+  border: none;
+  outline: none;
+}
+
+.call-form__item--btn {
+  position: relative;
+  width: 472px;
+  padding-right: 150px;
+  z-index: 10;
+
+  @include _1400 {
+    width: 250px;
+    padding-right: 0;
+  }
+
+  @include _960 {
+    width: 100%;
+  }
+
+  @include _680 {
+    padding-top: 25px;
+  }
+}
+
+.call-form__item--btn input {
+  width: 246px;
+  min-height: 83px;
+  font-family: var(--title-family);
+  font-size: var(--span-text-size);
+  font-weight: 300;
+  color: var(--basic-white);
+  background-color: var(--back-contact);
+  padding: 10px;
+  cursor: pointer;
+
+  @include _1280 {
+    font-size: 16px;
+  }
+
+  @include _960 {
+    width: 196px;
+    min-height: 67px;
+    font-size: 14px;
+  }
+
+  @include _680 {
+    width: 172px;
+    min-height: 58px;
+    font-size: 14px;
+  }
+
+  @include _480 {
+    width: 147px;
+    min-height: 49px;
+    font-size: 14px;
+  }
+}

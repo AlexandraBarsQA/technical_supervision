@@ -1,0 +1,55 @@
+.contact-info {
+  margin-right: 60px;
+
+  @include _1080 {
+    margin-right: 0;
+    margin-bottom: 40px;
+  }
+
+  @include _960 {
+    margin-bottom: 0;
+  }
+}
+
+.contact-info h2 {
+  @include _1280 {
+    font-size: 32px;
+  }
+
+  @include _1600 {
+    font-size: 30px;
+  }
+
+  @include _1280 {
+    font-size: 28px;
+  }
+
+  @include _1080 {
+    font-size: 24px;
+    margin-bottom: 30px;
+  }
+
+  @include _960 {
+    font-size: 21px;
+  }
+
+  @include _767 {
+    font-size: 18px;
+    text-align: center;
+    padding-right: 0;
+  }
+
+  @include _580 {
+    font-size: 16px;
+  }
+
+  @include _480 {
+    font-size: 14px;
+  }
+}
+
+.contact-info a {
+  color: var(--headline);
+  text-decoration: underline;
+}
+

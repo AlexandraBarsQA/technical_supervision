@@ -1,0 +1,129 @@
+.service-items {
+  position: relative;
+  z-index: 10;
+
+  @include _960 {
+    margin-bottom: 20px;
+  }
+}
+
+.service-items--inner {
+  position: relative;
+  max-width: 1400px;
+  padding-right: 40%;
+  margin-bottom: 50px;
+
+  @include _1600 {
+    padding-right: 40%;
+  }
+
+  @include _1080 {
+    width: 100%;
+    max-width: 1400px;
+  }
+
+  @include _960 {
+    padding-right: 10%;
+  }
+
+  @include _680 {
+    padding-right: 0;
+  }
+}
+
+.service-items--inner h1 {
+  @include _1280 {
+    font-size: 32px;
+  }
+
+  @include _1080 {
+    margin-bottom: 30px;
+  }
+
+  @include _960 {
+    font-size: 28px;
+  }
+
+  @include _767 {
+    font-size: 24px;
+    text-align: center;
+    padding-right: 0;
+  }
+
+  @include _580 {
+    font-size: 20px;
+  }
+
+  @include _480 {
+    font-size: 18px;
+  }
+}
+
+.service-items h2 {
+  @include _1600 {
+    font-size: 34px;
+  }
+
+  @include _1280 {
+    font-size: 30px;
+  }
+
+  @include _1080 {
+    font-size: 24px;
+    margin-bottom: 30px;
+  }
+
+  @include _960 {
+    font-size: 21px;
+  }
+
+  @include _767 {
+    font-size: 18px;
+    text-align: center;
+    padding-right: 0;
+  }
+
+  @include _580 {
+    font-size: 16px;
+  }
+
+  @include _480 {
+    font-size: 14px;
+  }
+}
+
+.service-items--inner__img {
+  position: absolute;
+  width: 813px;
+  height: 1372px;
+  top: -20%;
+  right: -17.8%;
+  padding-left: 100px;
+
+  @include _1600 {
+    right: -18.6%;
+  }
+
+  @include _1400 {
+    width: 650px;
+    height: 1097px;
+    right: -20%;
+  }
+
+  @include _1280 {
+    width: 570px;
+    height: 960px;
+    top: -15%;
+    right: -21%;
+  }
+
+  @include _1080 {
+    display: none;
+  }
+}
+
+.service-items--inner__img img {
+  width: 100%; /* Ширина изображений */
+  height: 100%; /* Ширина изображений */
+  object-fit: contain; /* Вписываем фотографию в область */
+}

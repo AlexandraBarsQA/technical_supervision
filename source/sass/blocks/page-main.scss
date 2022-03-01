@@ -1,0 +1,99 @@
+.page-main {
+  position: relative;
+  padding-top: 30px;
+  background-color: var(--basic-white);
+  box-shadow: 4px 4px 54px 10px rgb(50, 50, 50);
+}
+
+.page-main::before {
+  position: absolute;
+  content: "";
+  width: 337px;
+  height: 114px;
+  top: 0;
+  left: 0;
+  background-image: url("../img/flags.svg");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  pointer-events: none;
+
+  @include _1400 {
+    background-size: 75% auto;
+  }
+
+  @include _960 {
+    background-size: 65% auto;
+  }
+
+  @include _767 {
+    background-size: 55% auto;
+  }
+
+  @include _580 {
+    background-size: 40% auto;
+  }
+
+  @include _480 {
+    background-size: 30% auto;
+  }
+}
+
+.page-main::after {
+  position: absolute;
+  content: "";
+  width: 337px;
+  height: 114px;
+  top: 0;
+  right: 0;
+  background-image: url("../img/flags.svg");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  transform: scaleX(-1);
+  pointer-events: none;
+
+  @include _1400 {
+    background-size: 75% auto;
+  }
+
+  @include _960 {
+    background-size: 65% auto;
+  }
+
+  @include _767 {
+    background-size: 55% auto;
+  }
+
+  @include _580 {
+    background-size: 40% auto;
+  }
+
+  @include _480 {
+    background-size: 30% auto;
+  }
+}
+
+.page-main--profil.container {
+  @include _1600 {
+    max-width: 83%;
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-top: 15px;
+  }
+
+  @include _1280 {
+    padding-bottom: 0;
+  }
+
+  @include _480 {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+
+.page-main--profil::before,
+.page-main--profil::after {
+  display: none;
+}
+
+
+

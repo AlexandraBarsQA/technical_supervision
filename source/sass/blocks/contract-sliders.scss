@@ -1,0 +1,45 @@
+.contract-sliders {
+  max-width: 1118px;
+
+  @include _1280 {
+    width: 100%;
+  }
+
+  @include _960 {
+
+  }
+
+  @include _680 {
+
+  }
+
+  @include _480 {
+
+  }
+}
+
+.contract-sliders__list {
+  width: 968px;
+  margin-top: 63px;
+
+  @include _1280 {
+
+  }
+
+  @include _767 {
+    margin-top: 45px;
+  }
+}
+
+.contract-sliders.swiper-container {
+  margin-left: 97px;
+
+  @include _1280 {
+    margin-left: 0;
+  }
+}
+
+.contract-sliders .swiper-wrapper,
+.contract-sliders .swiper-slide {
+  height: 100%;
+}

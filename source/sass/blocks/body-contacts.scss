@@ -1,0 +1,13 @@
+.body-contacts {
+  background: url(../img/back-pattern-contact.svg), #005353;
+  background-repeat: repeat;
+  background-size: 325px 383px;
+
+  @include _1280 {
+    background-size: 20% auto;
+  }
+
+  @include _680 {
+    background-size: 15% auto;
+  }
+}

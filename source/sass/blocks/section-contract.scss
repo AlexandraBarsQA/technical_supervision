@@ -1,0 +1,71 @@
+.section-contract {
+  max-width: 100%;
+  margin-bottom: 0;
+  padding-right: 134px;
+
+  @include _960 {
+    padding-right: 0;
+  }
+}
+
+.section-contract h2 {
+  color: #005c58;
+  margin-bottom: 30px;
+
+  @include _1600 {
+    font-size: 30px;
+  }
+
+  @include _1280 {
+    font-size: 28px;
+  }
+
+  @include _1080 {
+    font-size: 24px;
+    margin-bottom: 30px;
+  }
+
+  @include _960 {
+    font-size: 21px;
+  }
+
+  @include _767 {
+    text-align: center;
+    padding-right: 0;
+  }
+
+  @include _580 {
+    font-size: 18px;
+  }
+}
+
+.section-contract p {
+  font-family: var(--title-family);
+  font-size: 20px;
+  font-weight: 300;
+  color: var(--main-text);
+  margin: 0;
+  margin-bottom: 28px;
+
+  @include _1600 {
+    font-size: 18px;
+    line-height: 21px;
+    margin-bottom: 18px;
+  }
+
+  @include _1400 {
+    font-size: 16px;
+    line-height: 18px;
+  }
+
+  @include _1280 {
+    font-size: 14px;
+    line-height: 16px;
+    margin-bottom: 10px;
+  }
+
+  @include _580 {
+    font-size: 12px;
+    line-height: 14px;
+  }
+}

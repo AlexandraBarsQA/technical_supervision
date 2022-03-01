@@ -1,0 +1,15 @@
+.body-service {
+  max-width: 100%;
+  background: url(../img/back-pattern-service.svg), #005757;
+  background-repeat: repeat;
+  background-size: 269px 183px;
+  overflow-x: hidden;
+
+  @include _1280 {
+    background-size: 25% auto;
+  }
+
+  @include _680 {
+    background-size: 20% auto;
+  }
+}

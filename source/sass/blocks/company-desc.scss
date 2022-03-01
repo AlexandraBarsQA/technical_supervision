@@ -1,0 +1,107 @@
+.company-desc {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  @include _1080 {
+    flex-direction: column;
+  }
+}
+
+.company-desc::before {
+  position: absolute;
+  content: "";
+  width: 306px;
+  height: 1218px;
+  top: 33.3%;
+  left: -19%;
+  background-image: url("../img/ruler.png");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  pointer-events: none;
+
+  @include _1600 {
+    width: 245px;
+    height: 975px;
+  }
+
+  @include _1400 {
+    width: 199px;
+    height: 792px;
+    top: 30%;
+    left: -20%;
+  }
+
+  @include _1280 {
+    width: 168px;
+    height: 670px;
+    left: -21%;
+  }
+
+  @include _1080 {
+    left: -17%;
+  }
+}
+
+.company-desc::after {
+  position: absolute;
+  content: "";
+  width: 503px;
+  height: 954px;
+  top: 70%;
+  right: -17.9%;
+  background-image: url("../img/hand.png");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  pointer-events: none;
+
+  @include _1600 {
+    width: 403px;
+    height: 763px;
+    right: -18.3%;
+  }
+
+  @include _1400 {
+    width: 327px;
+    height: 620px;
+    right: -20%;
+  }
+
+  @include _1280 {
+    width: 277px;
+    height: 525px;
+    top: 95%;
+    right: -21%;
+  }
+
+  @include _1080 {
+    top: 90%;
+    right: -16.2%;
+  }
+}
+
+@include _960 {
+  .company-desc::before,
+  .company-desc::after {
+    display: none;
+  }
+}
+
+.company-desc ul {
+  width: 760px;
+  margin-right: 60px;
+
+  @include _1280 {
+    margin-right: 40px;
+  }
+
+  @include _1080 {
+    margin-right: 0;
+  }
+
+  @include _960 {
+    width: 100%;
+  }
+}

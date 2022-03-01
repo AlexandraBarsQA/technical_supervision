@@ -1,0 +1,97 @@
+.list-site li {
+  position: relative;
+  font-family: var(--main-text-family);
+  font-size: var(--main-text-size);
+  line-height: var(--main-text-line);
+  font-weight: 300;
+  color: var(--main-text);
+  text-transform: uppercase;
+  font-variant: small-caps;
+  padding-left: 50px;
+  margin-bottom: 30px;
+
+  @include _1400 {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  @include _767 {
+    font-size: 14px;
+    line-height: 18px;
+    margin-bottom: 20px;
+  }
+
+  @include _580 {
+    margin-bottom: 18px;
+  }
+
+  @include _480 {
+    font-size: 12px;
+    line-height: 14px;
+    padding-left: 35px;
+  }
+}
+
+.list-site li::before {
+  position: absolute;
+  content: "";
+  width: 13px;
+  height: 16px;
+  top: 5px;
+  left: 17px;
+  background-image: url("../img/arrows-marker.svg");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+
+  @include _680 {
+    top: 3px;
+    left: 10px;
+    background-size: 75% auto;
+  }
+}
+
+.list-site p {
+  margin: 0;
+}
+
+.list-site span {
+  display: block;
+  font-weight: 700;
+}
+
+.list-site .side-block span {
+  display: inline-block;
+  font-weight: 300;
+}
+
+.list-site h3 {
+  display: block;
+  line-height: 25px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.list-site .side-block h3 {
+  line-height: 43px;
+
+  @include _1280 {
+    line-height: 34px;
+  }
+
+  @include _1080 {
+    line-height: 28px;
+  }
+
+  @include _1080 {
+    line-height: 24px;
+  }
+}
+
+.list-site br {
+  height: 0px;
+}
+
+.list-site a {
+  color: var(--main-text);
+  text-decoration: none;
+}

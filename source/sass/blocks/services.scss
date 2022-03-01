@@ -1,0 +1,94 @@
+.services {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 100px;
+  margin-bottom: 16px;
+
+  @include _1280 {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  @include _960 {
+    grid-template-columns: 1fr;
+  }
+}
+
+.services::before {
+  position: absolute;
+  content: "";
+  width: 1072px;
+  height: 1676px;
+  left: -19%;
+  bottom: -24.5%;
+  background-image: url("../img/leaves-service-2.png");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  pointer-events: none;
+
+  @include _1600 {
+    width: 857px;
+    height: 1340px;
+    bottom: -21.5%;
+  }
+
+  @include _1400 {
+    left: -21%;
+    bottom: -43%;
+  }
+
+  @include _1280 {
+    left: -21%;
+    bottom: -30%;
+  }
+
+  @include _1080 {
+    width: 750px;
+    height: 1173px;
+    left: -17%;
+    bottom: -15%;
+  }
+
+  @include _960 {
+    display: none;
+  }
+}
+
+.services::after {
+  position: absolute;
+  content: "";
+  width: 118px;
+  height: 507px;
+  top: -6%;
+  right: -17.9%;
+  background-image: url("../img/pen.png");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: 100% 0;
+  pointer-events: none;
+
+  @include _1600 {
+    width: 83px;
+    height: 355px;
+    right: -18.5%;
+  }
+
+  @include _1400 {
+    right: -20%;
+  }
+
+  @include _1280 {
+    right: -21%;
+  }
+
+  @include _1080 {
+    width: 72px;
+    height: 305px;
+    right: -16.2%;
+  }
+
+  @include _960 {
+    display: none;
+  }
+}

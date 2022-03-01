@@ -1,0 +1,25 @@
+.logo-teсh {
+  display: block;
+  width: 415px;
+  height: 253px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+
+  @include _1400 {
+    width: 30%;
+    height: auto;
+    text-align: center;
+  }
+
+  @include _767 {
+    margin-bottom: 35px;
+  }
+
+  @include _580 {
+    width: 50%;
+  }
+
+  @include _480 {
+    margin-bottom: 25px;
+  }
+}

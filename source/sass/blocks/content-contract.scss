@@ -1,0 +1,10 @@
+.content-contract {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 35px;
+  padding-bottom: 13%;
+
+  @include _1280 {
+    flex-direction: column;
+  }
+}

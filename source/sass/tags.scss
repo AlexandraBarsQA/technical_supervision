@@ -1,0 +1,40 @@
+body {
+  font-family: "Vladivostok", "Arial", sans-serif;
+  font-weight: 300;
+  margin: 0;
+  padding: 0;
+}
+
+*,*:before,*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  margin: 0;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+h1,
+h2 {
+  font-family: var(--title-family);
+  font-size: var(--title-size);
+  font-weight: var(--title-weight);
+  color: var(--headline);
+  text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 56px;
+  word-break: normal;
+}
+
+input[name="toggle"] {
+  display: none;
+}

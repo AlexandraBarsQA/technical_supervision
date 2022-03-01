@@ -1,0 +1,21 @@
+.side-nav li {
+  width: 190px;
+  font-family: var(--main-text-family);
+  font-size: var(--main-text-size);
+  font-weight: 300;
+  color: var(--main-text);
+  text-align: center;
+}
+
+.side-nav a {
+  color: var(--main-text);
+  text-decoration: none;
+}
+
+.side-nav__item-active {
+  background-color: #005c58;
+}
+
+.side-nav__item-active a {
+  color: var(--basic-white);
+}

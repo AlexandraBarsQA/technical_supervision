@@ -1,0 +1,88 @@
+.gallery-thumbs.swiper-container {
+  max-width: 100%;
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+  padding-top: 40px;
+}
+
+
+.gallery-thumbs__item {
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: center;
+  cursor: pointer;
+  transition: opacity 800ms;
+
+  @include _960 {
+    width: 12px !important;
+  }
+
+  @include _680 {
+    width: 10px !important;
+  }
+}
+
+.gallery-thumbs.swiper-slide {
+  max-width: 100%;
+  height: 212px;
+}
+
+.gallery-thumbs .swiper-slide-thumb-active {
+  opacity: 0.5;
+}
+
+  @include _960 {
+    .gallery-thumbs__item img {
+      visibility: hidden;
+    }
+  }
+
+  @include _960 {
+    .gallery-thumbs__item.swiper-slide {
+      height: 12px;
+      background-color: rgba(204, 204, 204, 0.8);
+      border-radius: 50%;
+      border: none;
+      margin-right: 16px !important;
+    }
+  }
+
+  @include _680 {
+    .gallery-thumbs__item.swiper-slide {
+      height: 10px;
+    }
+  }
+
+.gallery-thumbs .swiper-wrapper {
+
+}
+
+.gallery-thumbs.swiper-container-autoheight figure {
+  width: 100%; /* Ширина области */
+  height: 212px; /* Высота области */
+  margin: 0; /* Обнуляем отступы */
+  overflow: hidden; /* Прячем всё за пределами */
+
+  @include _1600 {
+    height: 160px;
+  }
+
+  @include _960 {
+    width: 12px;
+    height: 12px;
+  }
+
+  @include _680 {
+    width: 10px;
+    height: 10px;
+  }
+}
+
+.gallery-thumbs.swiper-container-autoheight figure img {
+  width: 100%; /* Ширина изображений */
+  height: 100%; /* Ширина изображений */
+  object-fit: cover; /* Вписываем фотографию в область */
+}
+

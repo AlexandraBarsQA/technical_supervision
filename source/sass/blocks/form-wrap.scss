@@ -1,0 +1,71 @@
+.form-wrap {
+  position: relative;
+  padding-bottom: 65px;
+  z-index: 10;
+}
+
+.form-wrap h2 {
+  margin-bottom: 0;
+
+  @include _1600 {
+    font-size: 30px;
+  }
+
+  @include _1280 {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+
+  @include _1080 {
+    font-size: 24px;
+    margin-bottom: 0;
+  }
+
+  @include _960 {
+    font-size: 21px;
+    text-align: center;
+    padding-right: 0;
+  }
+
+  @include _767 {
+    font-size: 18px;
+  }
+
+  @include _580 {
+    font-size: 16px;
+  }
+
+  @include _480 {
+    font-size: 14px;
+  }
+}
+
+.form-wrap--service::after {
+  position: absolute;
+  content: "";
+  width: 1258px;
+  height: 1506px;
+  right: -17.9%;
+  bottom: -110%;
+  background-image: url("../img/hand-service-2.png");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: 100% 100%;
+  pointer-events: none;
+
+  @include _1600 {
+    right: -18.5%;
+    bottom: -118%;
+    background-size: 89% 100%;
+  }
+
+  @include _1400 {
+    right: -20%;
+    bottom: -123%;
+    background-position: 112% 100%;
+  }
+
+  @include _1280 {
+    display: none;
+  }
+}
